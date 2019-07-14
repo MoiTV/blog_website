@@ -1,0 +1,63 @@
+@import 'varibles';
+@import 'utilities';
+// Good pratice to reset the page
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #fff;
+    color: #333;
+}
+
+// Navbar
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-bottom: #333 solid 1px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            list-style-type: none;
+            padding: .5rem 0.3rem;
+        }
+    }
+    .fab {
+        &.fa-linkedin {
+            color: $linkedin;
+        }
+        &.fa-facebook-square {
+            color: $facebook;
+        }
+        &.fa-youtube-square {
+            color: $youtube;
+        }
+        &.fa-github-square {
+            color: $github;
+        }
+    }
+}
+
+// Showcase 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#post {
+    border-bottom: 1px solid #333;
+}
+
+// Main-Footer
+#main-footer {
+    text-align: center;
+}
