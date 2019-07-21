@@ -27,7 +27,7 @@ body {
         flex-direction: row;
         li {
             list-style-type: none;
-            padding: .5rem 0.3rem;
+            padding: 0.5rem 0.3rem;
         }
     }
     .fab {
@@ -46,7 +46,7 @@ body {
     }
 }
 
-// Showcase 
+// Showcase
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,6 +55,12 @@ body {
 
 #post {
     border-bottom: 1px solid #333;
+    .card {
+        overflow: scroll;
+        .card-body {
+            height: 300px;
+        }
+    }
 }
 
 // Main-Footer
